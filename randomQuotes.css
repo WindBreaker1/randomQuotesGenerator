@@ -1,0 +1,56 @@
+body {
+  background: rgb(27,111,195);
+  background: linear-gradient(135deg, rgba(27,111,195,1) 0%, rgba(20,160,214,0.7223681709011729) 50%, rgba(0,212,255,1) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#main-flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: space-between;
+  position: relative;
+  top: 200px;
+  transform:translateX(-50%),translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 10px black; 
+  border-radius: 15px;
+}
+
+#quote-button {
+  width: 200px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin: 25px;
+  cursor: pointer;
+
+  font-family: monospace;
+  font-size: 20px;
+  color: white;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 10px black; 
+
+  transition: background-color 0.5s, color 0.5s, border 0.5s;
+}
+
+#quote-button:hover {
+  background-color: rgba(222, 222, 222, 0.2);
+  border: 2px solid white;
+  color: black;
+}
+
+#quote-button:active {
+  width: 180px;
+  font-size: 19px;
+}
+
+#quote-text {
+  font-family: monospace;
+  font-size: 20px;
+  text-align: center;
+  margin: 25px;
+  color: white;
+}
